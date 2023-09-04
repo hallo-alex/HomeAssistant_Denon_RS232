@@ -37,7 +37,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 })
 
 NORMAL_INPUTS = {'CD': 'CD', 
-                 'TUNER','TUNER' #(Except AVR-2311CI model)
+                 'TUNER':'TUNER', #(Except AVR-2311CI model)
                  'DVD': 'DVD', 
                  'BD':'BD',
                  'TV': 'TV',
