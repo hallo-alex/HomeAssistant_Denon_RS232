@@ -36,7 +36,24 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_NAME, default=DEFAULT_NAME): cv.string,
 })
 
-NORMAL_INPUTS = {'CD': 'CD', 'DVD': 'DVD', 'TV': 'TV/CBL','HDP': 'HDP', 'Video Aux': 'V.AUX'}
+NORMAL_INPUTS = {'CD': 'CD', 
+                 'TUNER','TUNER' #(Except AVR-2311CI model)
+                 'DVD': 'DVD', 
+                 'BD':'BD',
+                 'TV': 'TV',
+                 'TV/CBL': 'TV/CBL', #not in AVR-2311CI/AVR-2311 DENON AVR control protocol Ver.7.0.0
+                 'SAT/CBL':'SAT/CBL',
+                 'DVR':'DVR',
+                 'GAME':'GAME',
+                 'DOCK':'DOCK',
+                 'HDRADIO':'HDRADIO',#(AVR-2311CI model Only)
+                 'IPOD':'IPOD',
+                 'USB DIRECT':'USB DIRECT',
+                 'IPOD DIRECT':'IPOD DIRECT',
+                 'USB':'USB',
+                 'IPD':'IPD',
+                 'HDP': 'HDP', 
+                 'Video Aux': 'V.AUX'}
 
 # Sub-modes of 'NET/USB'
 # {'USB': 'USB', 'iPod Direct': 'IPD', 'Internet Radio': 'IRP',
